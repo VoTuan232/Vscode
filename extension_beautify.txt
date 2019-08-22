@@ -1,0 +1,31 @@
+Format code Html, Scss, Json, Javascript :
+Cài extension Beautify 1.5.0
+Setting default extension formatter: Ctrl + Shift +P => search setting (chọn Open Setting Json)
+		{
+   {
+"extensions.ignoreRecommendations": true,
+   	"editor.detectIndentation": false,
+   	"liveServer.settings.donotShowInfoMsg": true,
+   	"[html]": {
+    		 "editor.defaultFormatter": "HookyQR.beautify"
+  	 },
+  	"terminal.integrated.rendererType": "dom",
+   	"editor.tabSize": 2,
+   	"[scss]": {
+     		"editor.defaultFormatter": "HookyQR.beautify"
+  	 },
+   	"[json]": {
+     		"editor.defaultFormatter": "HookyQR.beautify"
+   	},
+"[css]": {
+"editor.defaultFormatter": "HookyQR.beautify"
+ },
+"[javascript]": {
+     	"editor.defaultFormatter": "HookyQR.beautify"
+ },
+
+}
+
+
+	     3. Sử dụng: chọn file và nhấn Alt + Shift +F để format
+
