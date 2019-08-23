@@ -1,8 +1,8 @@
 Format code Html, Scss, Json, Javascript :
-Cài extension Beautify 1.5.0
-Setting default extension formatter: Ctrl + Shift +P => search setting (chọn Open Setting Json)
+
+Bước 1: Cài extension Beautify 1.5.0
+Bước 2: Setting default extension formatter: Ctrl + Shift +P => search setting (chọn Open Setting Json)
 		{
-   {
 "extensions.ignoreRecommendations": true,
    	"editor.detectIndentation": false,
    	"liveServer.settings.donotShowInfoMsg": true,
@@ -23,9 +23,22 @@ Setting default extension formatter: Ctrl + Shift +P => search setting (chọn O
 "[javascript]": {
      	"editor.defaultFormatter": "HookyQR.beautify"
  },
-
+"[typescript]": {
+     "editor.defaultFormatter": "esbenp.prettier-vscode"
+   },
+"editor.formatOnSave": true,
 }
 
 
-	     3. Sử dụng: chọn file và nhấn Alt + Shift +F để format
 
+Bước 3: chọn file và nhấn Alt + Shift +F(mặc định) để format
+
+Bước 4(optional): Sửa short cut formatter:
+Ctrt + Shift + P =>  chọn Open Keyboard Shortcut(Json)
+Add thêm:
+
+{
+     "key": "ctrl+b",
+     "command": "HookyQR.beautify",
+     "when": "editorFocus"
+}
